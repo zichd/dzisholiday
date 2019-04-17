@@ -7,7 +7,7 @@ with open('README') as f:
 
 setup(
     name='dzisholiday',
-    version=get_git_version(),
+    version=get_git_version().decode('utf-8').split('-')[0],
     description='Finds Czech holiday for given year',
     long_description=long_description,
     author='Jan Novak',
