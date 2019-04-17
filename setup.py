@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-
+from version import get_git_version
 
 with open('README') as f:
     long_description = ''.join(f.readlines())
@@ -7,7 +7,7 @@ with open('README') as f:
 
 setup(
     name='dzisholiday',
-    version='0.0.1',
+    version=get_git_version(),
     description='Finds Czech holiday for given year',
     long_description=long_description,
     author='Jan Novak',
