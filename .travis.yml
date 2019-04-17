@@ -10,3 +10,5 @@ deploy:
   user: "zichd"
   password: "ELHHmtiF68PzhW7"
   server: https://test.pypi.org/legacy/
+  on:
+    tags: true
